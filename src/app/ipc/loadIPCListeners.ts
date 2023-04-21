@@ -7,6 +7,7 @@ import openMessageBox from "./handlers/openMessageBox"
 import showNotification from "./handlers/showNotification"
 import getTheme from "./handlers/getTheme"
 import useTouchId from "./handlers/useTouchId"
+import openLink from "./handlers/openLink"
 
 interface ILoadIPCListeners {
     browserWindow: BrowserWindow
@@ -22,6 +23,7 @@ export const loadIPCListeners = (props: ILoadIPCListeners) => {
     ipcMain.on('notification', () => showNotification())
     ipcMain.handle('get-theme', () => getTheme())
     ipcMain.handle('use-touch-id', () => useTouchId())
+    ipcMain.on('open-link', openLink)
 }
 
 export const removeIPCListeners = () => {    
@@ -34,4 +36,5 @@ export const removeIPCListeners = () => {
     ipcMain.removeAllListeners('notification')
     ipcMain.removeHandler('get-theme')
     ipcMain.removeHandler('use-touch-id')
+    ipcMain.removeAllListeners('open-link')
 }

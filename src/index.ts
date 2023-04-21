@@ -1,8 +1,7 @@
-import { app, BrowserWindow, globalShortcut, Menu, nativeTheme, ShareMenu, Tray } from 'electron';
+import { app, BrowserWindow, globalShortcut, Menu, nativeTheme, Tray } from 'electron';
 import { removeIPCListeners, loadIPCListeners } from './app/ipc/loadIPCListeners';
 import buildMenu from './app/menu/buildMenu';
 import getTheme from './app/ipc/handlers/getTheme';
-import { systemPreferences } from 'electron';
 import showNotification from './app/ipc/handlers/showNotification';
 declare const MAIN_WINDOW_WEBPACK_ENTRY: string;
 declare const MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY: string;
@@ -32,14 +31,16 @@ const createMainWindow = () => {
 
   mainWindow.on('close', removeIPCListeners)
 
-  nativeTheme.on('updated', () => {
-    mainWindow.webContents.send('theme', getTheme())
-  })
-
   globalShortcut.register('CommandOrControl+G', () => mainWindow.webContents.send('shortcut', 'CommandOrControl+G'))
 
   return mainWindow
 };
+
+nativeTheme.on('updated', () => {
+  BrowserWindow.getAllWindows().forEach(win => {
+    win.webContents.send('theme', getTheme())
+  })
+})
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {

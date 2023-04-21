@@ -7,6 +7,7 @@ export interface IElectronAPI {
     loadFiles: () => Promise<string>
     openMessageBox: (options: {title: string, message: string}) => void
     showNotification: () => void
+    openLink: (title: string) => void
     handleCounter: (callback: (event: IpcRendererEvent, value: number) => void) => Electron.IpcRenderer
     removeHandleCounter: () => void
     openNewWindow: () => void
@@ -32,6 +33,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
     loadFiles: () => ipcRenderer.invoke('dialog:openFile'),
     openMessageBox: (options: {title: string, message: string}) => ipcRenderer.send('open-message-box', options),
     showNotification: () => ipcRenderer.send('notification'),
+    openLink: (link: string) => ipcRenderer.send('open-link', link),
 
     handleCounter: (callback: (event: IpcRendererEvent, value: number) => void) => ipcRenderer.on('update-counter', callback),
     removeHandleCounter: () => ipcRenderer.removeAllListeners('update-counter'),

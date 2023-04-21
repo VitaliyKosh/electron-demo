@@ -1,0 +1,23 @@
+.git {
+
+}
+
+.qr {
+    max-width: 50%;
+    max-height: 50vh;
+    margin: 0 auto;
+}
+
+.link a {
+    text-decoration: underline;
+    color: #49cfea;
+    cursor: pointer;
+}
+
+.link a:hover {
+    color: #43bed7;
+}
+
+.link a:active {
+    color: #69c2d4;
+}

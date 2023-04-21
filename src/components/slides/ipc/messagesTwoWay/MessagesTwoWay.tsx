@@ -14,7 +14,7 @@ interface MessagesTwoWayProps extends IPage {
 
 const codeRenderer = [
     {
-        text: 'const sendMessage = () => {',
+        text: 'const sendMessage = async () => {',
         tab: 0
     }, {
         text: 'const files = await window.electronAPI.loadFiles()',

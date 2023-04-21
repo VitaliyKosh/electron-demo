@@ -16,6 +16,7 @@ import MessagesTwoWay from "../components/slides/ipc/messagesTwoWay/MessagesTwoW
 import MessagesMainToRenderer from "../components/slides/ipc/messagesMainToRenderer/MessagesMainToRenderer";
 import NativeAPI from "../components/slides/nativeAPI/NativeAPI";
 import BrowserWindow from "../components/slides/nativeAPI/BrowserWindow";
+import Git from "../components/slides/end/Git";
 
 
 export const slides: Slide[] = [
@@ -40,4 +41,6 @@ export const slides: Slide[] = [
 
     new Slide('Main Process Modules (Native API)', NativeAPI, 0),
     new Slide('Демонстрация Native API', BrowserWindow, 1),
+
+    new Slide('Git', Git, 0)
 ]
