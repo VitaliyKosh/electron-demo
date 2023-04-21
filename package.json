@@ -16,8 +16,8 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx .",
-    "build-win": "electron-builder -w --arm64",
-    "build": "electron-builder"
+    "build-win": "electron-builder -w",
+    "build-mac": "electron-builder -m"
   },
   "keywords": [],
   "author": {
