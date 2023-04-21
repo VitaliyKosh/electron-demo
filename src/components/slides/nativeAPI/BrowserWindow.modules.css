@@ -1,0 +1,8 @@
+.video {
+    border-radius: var(--border-radius);
+    display: none;
+}
+
+.show {
+    display: block;
+}

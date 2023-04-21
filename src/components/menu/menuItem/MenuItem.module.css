@@ -1,0 +1,23 @@
+.menuItem {
+    color: var(--text-color);
+    background-color: var(--accent-support-color);
+    padding: 5px;
+    border-radius: var(--border-radius);
+    text-align: left;
+    white-space: nowrap;
+    font-family: var(--title-font);
+    font-size: var(--xs-font-size);
+}
+
+.menuItem:hover {
+    filter: brightness(1.05);
+}
+
+.menuItem:active {
+    filter: brightness(1.1);
+}
+
+.active {
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}

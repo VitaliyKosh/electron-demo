@@ -1,0 +1,42 @@
+.applications {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.slideContainer {
+    flex: 1;
+    position: relative;
+}
+
+.supportBox {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 25vh));
+    width: 80%;
+    margin: 0 auto;
+
+    height: 100px;
+    flex: 1;
+    position: relative;
+}
+
+.avatar {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    white-space: nowrap;
+}
+
+.avatarImg {
+    overflow: hidden;
+    padding: 15%;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-family: var(--text-font);
+    font-size: 1.8vw;
+}

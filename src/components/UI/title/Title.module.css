@@ -1,0 +1,6 @@
+.title {
+    font-family: var(--title-font);
+    font-size: var(--xl-font-size);
+    font-weight: bold;
+    color: var(--text-color);
+}

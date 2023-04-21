@@ -1,0 +1,60 @@
+@charset "UTF-8";
+* {padding: 0;margin: 0;border: 0;}
+*, *:before, *:after {-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block;}
+html, body {height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited {text-decoration: none; color: inherit;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: 400;}
+
+
+.app.dark {
+    --primary-color: #1B1C26;
+    --accent-color: #9EEAF9;
+    --accent-support-color: #4F6F7A;
+
+    --bg-color: #FFF;
+    --bg-second-color: #e7e7e7;
+
+    --text-color: #1C1E21;
+    --text-invert-color: #9EEAF9;
+}
+
+.app.light {
+    --primary-color: #e7e7e7;
+    --accent-color: #9EEAF9;
+    --accent-support-color: #93cbde;
+
+    --bg-color: #FFF;
+    --bg-second-color: #e7e7e7;
+
+    --text-color: #1C1E21;
+    --text-invert-color: #9EEAF9;
+}
+
+:root {
+    --border-radius: 10px;
+}
+
+:root {
+    --title-font: "Arial";
+    --second-title-font: "Arial";
+    --text-font: "Arial";
+    --monospace-font: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+    --line-height: 1.5;
+
+    --xl-font-size: 40px;
+    --l-font-size: 30px;
+    --m-font-size: 25px;
+    --s-font-size: 20px;
+    --xs-font-size: 12px;
+}

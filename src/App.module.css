@@ -1,0 +1,8 @@
+.app {
+    display: grid;
+    grid-template-columns: min-content auto;
+    background-color: var(--primary-color);
+    height: 100vh;
+    padding: 10px;
+    gap: 10px;
+}

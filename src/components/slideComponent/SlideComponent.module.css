@@ -1,0 +1,48 @@
+.slideComponent {
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius);
+    overflow: scroll;
+    opacity: 1;
+    padding: 30px;
+    min-height: 100%;
+}
+
+.content {
+    min-height: 100%;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 30px;
+}
+
+.slide {
+    min-height: 100%;
+    flex: 1;
+    position: relative;
+}
+
+@keyframes changing {
+    0% {
+        transform: translateY(0);
+        opacity: 1
+    }
+    49% {
+        transform: translateY(-50px);
+        opacity: 0
+    }
+    51% {
+        transform: translateY(50px);
+        opacity: 0
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+.changing {
+    animation: 1s forwards changing;
+}

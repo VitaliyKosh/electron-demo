@@ -1,0 +1,40 @@
+.codeBlock {
+    background-color: var(--bg-second-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.filename {
+    font-family: var(--text-font);
+    font-size: var(--s-font-size);
+    color: var(--accent-support-color);
+}
+
+.borderLine {
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-support-color);
+    opacity: 0.5;
+}
+
+.code {
+    overflow: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.code::-webkit-scrollbar { 
+    display: none;
+}
+
+.line {
+    font-family: var(--monospace-font);
+    font-size: var(--s-font-size);
+    line-height: 1.3;
+    white-space: nowrap;
+    height: 26px;
+    min-width: 100%;
+}

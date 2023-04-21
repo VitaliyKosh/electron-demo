@@ -1,0 +1,16 @@
+#root {
+    font-family: var(--title-font);
+    font-size: var(--xl-font-size);
+    color: var(--text-color);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--accent-color);
+}

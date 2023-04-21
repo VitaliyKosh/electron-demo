@@ -1,0 +1,5 @@
+.secondTitle {
+    font-family: var(--second-title-font);
+    font-size: var(--l-font-size);
+    color: var(--text-color);
+}

@@ -1,0 +1,11 @@
+.start {
+
+}
+
+.logo {
+    margin: 0 auto;
+}
+
+.secondTitle {
+    font-family: var(--second-title-font);
+}

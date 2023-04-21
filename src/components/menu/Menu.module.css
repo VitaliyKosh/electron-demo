@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: scroll;
+    border-radius: var(--border-radius);
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.menu::-webkit-scrollbar { 
+    display: none;
+}

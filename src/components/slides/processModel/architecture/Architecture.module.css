@@ -1,0 +1,63 @@
+.blocks {
+    display: flex;
+    gap: 30px;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.osBlock {
+    text-align: center;
+    border: 3px var(--primary-color) solid;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    width: 100%;
+}
+
+.connectionBox {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.connections {
+    display: flex;
+}
+
+.connection {
+    background-color: var(--primary-color);
+    height: 30px;
+    width: 3px;
+    position: relative;
+}
+
+.connection::after {
+    content: ''; 
+    position: absolute;
+    left: -8.5px;
+    top: -30px;
+    border: 10px solid transparent;
+    border-bottom: 20px solid var(--primary-color);
+}
+
+.connection::before {
+    content: ''; 
+    position: absolute;
+    left: -8.5px;
+    bottom: -30px;
+    border: 10px solid transparent;
+    border-top: 20px solid var(--primary-color);
+}
+
+.connectionText {
+    margin-left: 10px;
+}
+
+.nodeLogo {
+    display: inline;
+    height: var(--l-font-size);
+}
