@@ -5,6 +5,12 @@
     opacity: 1;
     padding: 30px;
     min-height: 100%;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.slideComponent::-webkit-scrollbar { 
+    display: none;
 }
 
 .content {
@@ -12,6 +18,10 @@
     display: flex;
     list-style: none;
     flex-direction: column;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
 }
 
 .title {

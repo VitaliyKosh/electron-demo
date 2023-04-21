@@ -6,7 +6,6 @@ import showNotification from './app/ipc/handlers/showNotification';
 declare const MAIN_WINDOW_WEBPACK_ENTRY: string;
 declare const MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY: string;
 
-
 if (require('electron-squirrel-startup')) {
   app.quit();
 }

@@ -5,7 +5,6 @@ import { Menu as MenuClass } from "./types/Menu";
 import { slides } from './router';
 import SlideComponent from './components/slideComponent/SlideComponent';
 import { Slide } from './types/Slide';
-import ElectronLogo from './components/UI/electronLogo/ElectronLogo';
 
 const initMenu = () => {
     const menu = new MenuClass()
